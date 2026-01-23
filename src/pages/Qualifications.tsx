@@ -44,6 +44,20 @@ const certificates = [
     certificateId: "9749636",
     downloadUrl: "/certificates/Full-Stack_Development_Certificate.pdf",
   },
+  {
+    title: "Learn Advanced C++ Course",
+    issuer: "Ahmad Bazzi - Online Certification",
+    date: "January 2026",
+    certificateId: "9751575",
+    downloadUrl: "/certificates/Advanced_C.pdf",
+  },
+  {
+    title: "TypeScript Basics",
+    issuer: "Online Course Certification",
+    date: "January 2026",
+    certificateId: "9750285",
+    downloadUrl: "/certificates/TYPESCRIPT_BASICS.pdf",
+  },
 ];
 
 const Qualifications = () => {
