@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { Download, MapPin, Mail, Phone, Github, Linkedin } from "lucide-react";
+import { Download, MapPin, Mail, Github, Code, Terminal } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import JarisAssistant from "@/components/JarisAssistant";
-import parisProfile from "@/assets/paris-profile.jpeg";
 
 const HomePage = () => {
   const handleDownloadCV = () => {
@@ -131,75 +130,79 @@ const HomePage = () => {
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
                   Download CV
                 </Button>
-                <div className="flex items-center gap-2">
-                  <a
-                    href="https://github.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
-                  >
-                    <Linkedin className="w-5 h-5" />
-                  </a>
-                </div>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
               </motion.div>
             </motion.div>
 
-            {/* Right content - Profile image */}
+            {/* Right content - Code display */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               className="relative flex justify-center lg:justify-end"
             >
-              {/* Glow effect behind image */}
+              {/* Glow effect */}
               <motion.div
                 className="absolute inset-0 flex items-center justify-center"
-                animate={{
-                  scale: [1, 1.05, 1],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl" />
+                <div className="w-80 h-80 md:w-96 md:h-96 rounded-3xl bg-gradient-to-br from-primary/30 to-secondary/30 blur-3xl" />
               </motion.div>
 
-              {/* Profile image container */}
+              {/* Code terminal */}
               <motion.div
                 className="relative"
                 animate={{ y: [0, -10, 0] }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                {/* Rotating border ring */}
                 <motion.div
-                  className="absolute -inset-3 rounded-full border-2 border-dashed border-primary/30"
+                  className="absolute -inset-3 rounded-3xl border-2 border-dashed border-primary/30"
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
                 />
                 
-                {/* Image frame */}
-                <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary/50 shadow-2xl glow-border">
-                  <img
-                    src={parisProfile}
-                    alt="Paris Netili"
-                    className="w-full h-full object-cover object-top"
-                  />
-                  {/* Overlay gradient */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/50 to-transparent" />
+                <div className="relative w-80 md:w-96 rounded-2xl overflow-hidden border-2 border-primary/50 shadow-2xl glow-border glass-strong">
+                  {/* Terminal header */}
+                  <div className="flex items-center gap-2 px-4 py-3 bg-primary/10 border-b border-primary/20">
+                    <div className="w-3 h-3 rounded-full bg-red-500" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                    <div className="w-3 h-3 rounded-full bg-green-500" />
+                    <span className="ml-2 text-xs text-muted-foreground font-mono">paris@dev</span>
+                  </div>
+                  
+                  {/* Terminal content */}
+                  <div className="p-4 font-mono text-sm space-y-2">
+                    <div className="flex items-center gap-2 text-muted-foreground">
+                      <Terminal className="w-4 h-4 text-primary" />
+                      <span className="text-primary">$</span>
+                      <span>whoami</span>
+                    </div>
+                    <p className="text-foreground pl-6">Paris Netili</p>
+                    
+                    <div className="flex items-center gap-2 text-muted-foreground mt-3">
+                      <Code className="w-4 h-4 text-primary" />
+                      <span className="text-primary">$</span>
+                      <span>cat skills.txt</span>
+                    </div>
+                    <div className="pl-6 text-foreground">
+                      <p>Python, Java, C#</p>
+                      <p>React, Node.js</p>
+                      <p>MySQL, Azure</p>
+                    </div>
+                    
+                    <div className="flex items-center gap-2 text-muted-foreground mt-3">
+                      <span className="text-primary">$</span>
+                      <span className="text-primary animate-pulse">_</span>
+                    </div>
+                  </div>
                 </div>
 
                 {/* Floating decorative elements */}

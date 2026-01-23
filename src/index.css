@@ -9,58 +9,58 @@
 
 @layer base {
   :root {
-    /* Dark cyber-tech palette */
-    --background: 220 20% 6%;
-    --foreground: 210 40% 98%;
+    /* Red and Black Theme */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 95%;
 
-    --card: 220 25% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 220 25% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    /* Cyan accent - primary brand color */
-    --primary: 185 100% 50%;
-    --primary-foreground: 220 20% 6%;
+    /* Red accent - primary brand color */
+    --primary: 0 85% 50%;
+    --primary-foreground: 0 0% 100%;
 
-    /* Purple-blue secondary */
-    --secondary: 250 80% 60%;
-    --secondary-foreground: 210 40% 98%;
+    /* Darker red secondary */
+    --secondary: 0 70% 35%;
+    --secondary-foreground: 0 0% 95%;
 
     /* Muted darker tones */
-    --muted: 220 20% 15%;
-    --muted-foreground: 215 20% 55%;
+    --muted: 0 5% 15%;
+    --muted-foreground: 0 5% 55%;
 
     /* Accent glow colors */
-    --accent: 185 100% 50%;
-    --accent-foreground: 220 20% 6%;
+    --accent: 0 85% 50%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 15%;
-    --ring: 185 100% 50%;
+    --border: 0 5% 18%;
+    --input: 0 5% 15%;
+    --ring: 0 85% 50%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for portfolio */
-    --glass-bg: 220 25% 10%;
-    --glass-border: 220 20% 25%;
-    --glow-cyan: 185 100% 50%;
-    --glow-purple: 250 80% 60%;
-    --text-gradient-start: 185 100% 50%;
-    --text-gradient-end: 250 80% 60%;
+    --glass-bg: 0 0% 10%;
+    --glass-border: 0 5% 25%;
+    --glow-cyan: 0 85% 50%;
+    --glow-purple: 0 70% 35%;
+    --text-gradient-start: 0 85% 50%;
+    --text-gradient-end: 0 70% 35%;
 
     /* Sidebar defaults */
-    --sidebar-background: 220 25% 8%;
-    --sidebar-foreground: 210 40% 98%;
-    --sidebar-primary: 185 100% 50%;
-    --sidebar-primary-foreground: 220 20% 6%;
-    --sidebar-accent: 220 25% 15%;
-    --sidebar-accent-foreground: 210 40% 98%;
-    --sidebar-border: 220 20% 18%;
-    --sidebar-ring: 185 100% 50%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 5% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 5% 18%;
+    --sidebar-ring: 0 85% 50%;
   }
 }
 
