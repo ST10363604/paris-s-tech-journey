@@ -81,8 +81,9 @@ serve(async (req) => {
       headers: { ...corsHeaders, "Content-Type": "text/event-stream" },
     });
   } catch (e) {
-    console.error("JARIS error:", e);
-    return new Response(JSON.stringify({ error: e.message }), {
+    const error = e instanceof Error ? e.message : "Unknown error";
+    console.error("JARIS error:", error);
+    return new Response(JSON.stringify({ error }), {
       status: 500,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
