@@ -7,8 +7,8 @@ import JarisAssistant from "@/components/JarisAssistant";
 const HomePage = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Paris_Netili_CV.pdf";
-    link.download = "Paris_Netili_CV.pdf";
+    link.href = "/Paris_Netili_CV.docx";
+    link.download = "Paris_Netili_CV.docx";
     link.click();
   };
 
