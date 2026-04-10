@@ -9,7 +9,7 @@ const education = [
     institution: "IIE Rosebank College",
     qualification: "Bachelor of Information Technology in Business Systems",
     year: "Expected 2026",
-    status: "Current - 2nd Year",
+    status: "Current - Final Year",
     icon: GraduationCap,
   },
   {

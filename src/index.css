@@ -9,58 +9,58 @@
 
 @layer base {
   :root {
-    /* Red and Black Theme */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 95%;
+    /* Dark Blue Theme */
+    --background: 220 30% 4%;
+    --foreground: 210 20% 95%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 220 25% 8%;
+    --card-foreground: 210 20% 95%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 220 25% 8%;
+    --popover-foreground: 210 20% 95%;
 
-    /* Red accent - primary brand color */
-    --primary: 0 85% 50%;
+    /* Blue accent - primary brand color */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
 
-    /* Darker red secondary */
-    --secondary: 0 70% 35%;
-    --secondary-foreground: 0 0% 95%;
+    /* Deeper blue secondary */
+    --secondary: 230 70% 45%;
+    --secondary-foreground: 210 20% 95%;
 
     /* Muted darker tones */
-    --muted: 0 5% 15%;
-    --muted-foreground: 0 5% 55%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 55%;
 
     /* Accent glow colors */
-    --accent: 0 85% 50%;
+    --accent: 217 91% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 5% 18%;
-    --input: 0 5% 15%;
-    --ring: 0 85% 50%;
+    --border: 220 15% 18%;
+    --input: 220 15% 15%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for portfolio */
-    --glass-bg: 0 0% 10%;
-    --glass-border: 0 5% 25%;
-    --glow-cyan: 0 85% 50%;
-    --glow-purple: 0 70% 35%;
-    --text-gradient-start: 0 85% 50%;
-    --text-gradient-end: 0 70% 35%;
+    --glass-bg: 220 20% 10%;
+    --glass-border: 220 15% 25%;
+    --glow-cyan: 217 91% 60%;
+    --glow-purple: 230 70% 45%;
+    --text-gradient-start: 217 91% 60%;
+    --text-gradient-end: 230 70% 45%;
 
     /* Sidebar defaults */
-    --sidebar-background: 0 0% 6%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 0 85% 50%;
+    --sidebar-background: 220 25% 6%;
+    --sidebar-foreground: 210 20% 95%;
+    --sidebar-primary: 217 91% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 5% 15%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 5% 18%;
-    --sidebar-ring: 0 85% 50%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 210 20% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 217 91% 60%;
   }
 }
 

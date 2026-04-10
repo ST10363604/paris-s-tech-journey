@@ -5,7 +5,7 @@ import JarisAssistant from "@/components/JarisAssistant";
 
 const skills = {
   technical: [
-    "Python", "Java", "C#", "HTML/CSS", "JavaScript",
+    "Python", "Java", "C#", "HTML/CSS", "JavaScript", "TypeScript",
     "MySQL", "Microsoft Access", "React", "Node.js",
     "Git", "Azure", "Google Cloud", "Linux"
   ],
@@ -81,27 +81,28 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I'm a 20-year-old South African technology enthusiast currently pursuing my 
-                  Bachelor of Information Technology in Business Systems at IIE Rosebank College. 
+                  I'm a 20-year-old South African technology enthusiast currently in my final year 
+                  pursuing a Bachelor of Information Technology in Business Systems at IIE Rosebank College. 
                   Standing at 6'2", I bring both physical and intellectual presence to every 
                   endeavor I undertake.
                 </p>
                 <p>
-                  My passion lies in bridging the gap between technology and business, creating 
-                  solutions that not only work efficiently but also drive organizational success. 
-                  I believe in the power of continuous learning and innovation.
+                  My passion lies in building software solutions that improve business processes 
+                  and organizational performance. I believe in the power of continuous learning 
+                  and innovation.
                 </p>
               </div>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Having completed my Higher Certificate in IT Support Services with Distinction, 
                   I've built a solid foundation in computer systems, networking, and software 
-                  development. I'm constantly expanding my skill set through practical projects 
-                  and professional certifications.
+                  development. I've developed practical projects including a real-time weather app, 
+                  booking system, CRM solution, financial budgeting tracker, cloud-based document 
+                  management system, and an AI-powered chatbot for business support.
                 </p>
                 <p>
-                  When I'm not coding or studying, I'm exploring new technologies, contributing 
-                  to open-source projects, or working on personal development.
+                  I speak 7 languages and I'm constantly expanding my skill set through practical 
+                  projects and professional certifications.
                 </p>
               </div>
             </div>

@@ -14,7 +14,8 @@ const HomePage = () => {
 
   const skills = [
     "Python", "Java", "C#", "HTML/CSS", "JavaScript", 
-    "MySQL", "Azure", "React", "Node.js"
+    "MySQL", "Azure", "React", "Node.js", "Git",
+    "Google Cloud", "Linux", "TypeScript"
   ];
 
   return (
@@ -69,11 +70,11 @@ const HomePage = () => {
                 transition={{ delay: 0.4 }}
                 className="text-muted-foreground text-lg leading-relaxed max-w-lg"
               >
-                Motivated IT and Business Systems student at IIE Rosebank College, 
-                passionate about combining technology and business processes to 
-                improve organizational performance. Skilled in programming, systems 
-                analysis, and IT support, seeking opportunities to apply my technical 
-                knowledge in a dynamic environment.
+                IT and Business Systems student at IIE Rosebank College, passionate about 
+                building software solutions that improve business processes and organizational 
+                performance. Strong foundation in software development, systems analysis, 
+                databases, and IT support. Experienced in developing practical projects 
+                including real-time web apps, booking systems, CRM solutions, and AI-powered chatbots.
               </motion.p>
 
               {/* Location & Contact */}
@@ -85,7 +86,7 @@ const HomePage = () => {
               >
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4 text-primary" />
-                  <span>Krugersdorp, South Africa</span>
+                  <span>Rangeview, Krugersdorp</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4 text-primary" />
@@ -131,7 +132,7 @@ const HomePage = () => {
                   Download CV
                 </Button>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/ST10363604"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
