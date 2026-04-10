@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, MapPin, Mail, Github, Code, Terminal } from "lucide-react";
+import { Download, MapPin, Mail, Github, Code, Terminal, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import JarisAssistant from "@/components/JarisAssistant";
@@ -7,8 +7,8 @@ import JarisAssistant from "@/components/JarisAssistant";
 const HomePage = () => {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/Paris_Netili_CV.pdf";
-    link.download = "Paris_Netili_CV.pdf";
+    link.href = "/Paris_Netili_CV.docx";
+    link.download = "Paris_Netili_CV.docx";
     link.click();
   };
 
@@ -138,6 +138,14 @@ const HomePage = () => {
                   className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
                 >
                   <Github className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/paris-netili-98a628279"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-xl glass border border-white/10 hover:border-primary/50 transition-colors"
+                >
+                  <Linkedin className="w-5 h-5" />
                 </a>
               </motion.div>
             </motion.div>
