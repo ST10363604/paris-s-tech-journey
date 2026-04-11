@@ -4,16 +4,7 @@ import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import JarisAssistant from "@/components/JarisAssistant";
 
-const projects = [
-  {
-    title: "Seaside Escapes",
-    description: "A beautiful travel and vacation booking platform featuring stunning beach destinations, hotel listings, and seamless booking experiences.",
-    tech: ["React", "Netlify", "CSS3", "JavaScript"],
-    liveUrl: "https://seaside-escapes.netlify.app/",
-    image: "🏖️",
-    featured: true,
-  },
-];
+const projects: { title: string; description: string; tech: string[]; liveUrl: string; image: string; featured: boolean }[] = [];
 
 const Projects = () => {
   return (
