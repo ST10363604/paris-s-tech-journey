@@ -4,7 +4,16 @@ import { Button } from "@/components/ui/button";
 import Footer from "@/components/Footer";
 import JarisAssistant from "@/components/JarisAssistant";
 
-const projects: { title: string; description: string; tech: string[]; liveUrl: string; image: string; featured: boolean }[] = [];
+const projects: { title: string; description: string; tech: string[]; liveUrl: string; image: string; featured: boolean }[] = [
+  {
+    title: "Weather App",
+    description: "A sleek weather application that delivers real-time forecasts, current conditions, and location-based weather data with a clean, responsive interface.",
+    tech: ["React", "TypeScript", "Weather API", "Tailwind CSS"],
+    liveUrl: "https://splendid-seahorse-6be114.netlify.app/",
+    image: "🌤️",
+    featured: true,
+  },
+];
 
 const Projects = () => {
   return (
